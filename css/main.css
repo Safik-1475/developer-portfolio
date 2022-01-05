@@ -1,0 +1,89 @@
+
+/*----------------------------------------------
+                google font
+------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*----------------------------------------------
+                global style
+------------------------------------------------*/
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+    font-size:medium;
+}
+a{
+    text-decoration:none;
+}
+img{
+    max-width:100%;
+    vertical-align:middle;
+}
+.container{
+    max-width:1140px;
+    margin:auto;
+}
+.row{
+    display:flex;
+    padding:0 10px;
+}
+.justify-between{
+    justify-content:space-between;
+    align-items:center;
+}
+
+.col{
+    width:40%;
+}
+    
+/*----------------------------------------------
+                header style 
+------------------------------------------------*/
+.header-area{
+    min-height:100vh;
+    background-image:linear-gradient(to bottom, #DEEEF0, #FEE4CD);
+}
+.header-area .headline{
+    padding:0 10px;
+    border-left:5px solid orange;
+    border-radius:2px;
+    text-transform:capitalize;
+}
+.headline h2{
+    font-size:34px;
+    font-weight:700;
+    color:#0c0c0c;
+}
+.headline h1{
+    font-size:42px;
+    letter-spacing:1px;
+    color:rgb(245, 223, 78);
+}
+.header-area p{
+    font-size:17px;
+    font-weight:400;
+    line-height:27px;
+    color:rgb(22, 20, 20);
+    text-transform:capitalize
+}
+.header-area .btn{
+    display:inline-block;
+    padding:12px 26px;
+    background-image:linear-gradient(45deg,orange,tomato, gray);
+    text-transform:capitalize;
+    font-size:17px;
+    transition:.3s;
+    color:rgb(22, 20, 20);
+    border-radius:5px;
+}
+.header-area .btn:hover{
+    background-image:linear-gradient(-45deg,orange,tomato, gray);
+    color:#fff;
+}
+.photo img{
+    width:90%;
+    height:90%;
+    border-radius:50%;
+}
