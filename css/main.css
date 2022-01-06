@@ -4,6 +4,8 @@
 ------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Yellowtail&display=swap');
+
 /*----------------------------------------------
                 global style
 ------------------------------------------------*/
@@ -42,6 +44,9 @@ img{
     font-weight:700;
     color:#0c0c0c;
 }
+.padd{
+    padding:60px 0;
+}
     
 /*----------------------------------------------
                 header style 
@@ -52,7 +57,7 @@ img{
 }
 .header-area .headline{
     padding:0 10px;
-    border-left:5px solid orange;
+    border-left:5px solid rgb(226, 151, 12);
     border-radius:2px;
     text-transform:capitalize;
 }
@@ -83,15 +88,12 @@ img{
     background-image:linear-gradient(-45deg,orange,tomato, gray);
     color:#fff;
 }
-.photo img{
+.header-area .photo img{
     width:90%;
     height:90%;
     border-radius:50%;
 }
-/*my mission*/
-.mission{
-    padding:60px 0;
-}
+/*---------------my services------------------*/
 .mission h2{
     text-align:center;
     padding:30px 0px;
@@ -132,4 +134,113 @@ img{
     font-size:15px;
     line-height:24px;
     color:darkslategray
+}
+
+/*-----------------------about me -------------------------*/
+.about-me {
+    background-image:url("../img/shape/shape-1.png");
+    background-repeat:no-repeat;
+    background-position:left ;
+    background-size:15%;
+}
+.about-me .photo img{
+    width:80%;
+}
+.about-me .col:nth-child(1){
+    width:40%;
+}
+.about-me .col:nth-child(2){
+    width:60%;
+}
+.about-me .col h3{
+    font-size:34px;
+    letter-spacing:1px;
+    font-weight:700;
+    text-transform:capitalize;
+    color:darkslategray;
+}
+.about-me .col p{
+    font-size:17px;
+    color:darkslategray;
+    line-height:26px;
+    letter-spacing:1px;
+    font-weight:400;
+}
+.about-me .col .btn-dwn,
+.community .col .btn-touch{
+    display:inline-block;
+    padding:12px 34px;
+    color:darkslategrey;
+    text-transform:capitalize;
+    font-size:17px;
+    background-image:linear-gradient(-45deg,orange,tomato, rgb(206, 51, 51));
+    border-radius:5px;
+    transition:all .3s;
+}
+.about-me .col .btn-dwn:hover{
+    background-image:linear-gradient(145deg,orange,tomato, rgb(206, 51, 51));
+}
+.community .col .btn-touch:hover{
+    background-image:linear-gradient(45deg,rgb(151, 142, 142),tomato, rgb(43, 25, 25));
+    color:#0c0c0c
+}
+
+/*---------------community------------------*/
+.community{
+    background-image:url("../img/shape/shape-1.png");
+    background-position:right bottom;
+    background-repeat:no-repeat;
+    background-size:15%;
+}
+
+ .community .col:nth-child(1){
+    width:56%;
+    margin-right:4%;
+ }
+ .community .col h3{
+    font-size:34px;
+    letter-spacing:1px;
+    font-weight:700;
+    text-transform:capitalize;
+    color:darkslategray;
+ }
+ .community .col p{
+    font-size:17px;
+    color:darkslategray;
+    line-height:26px;
+    letter-spacing:1px;
+    font-weight:400;
+ }
+
+ .community .col:nth-child(2){
+     width:40%;
+ }
+ .community .col .photo-box img{
+     width:95%;
+     border-radius:none;
+ }
+
+ /*---------------footer area------------------*/
+.footer-area{
+    background-color:#0b0d17;
+}
+
+.footer-area .row{
+    justify-content:center;
+}
+.footer-info h4{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Yellowtail', cursive;
+    font-size:28px;
+    color:#fff;
+}
+.footer-info h4 span{
+    color:rgb(226, 151, 12);
+    text-indent:30px;
+}
+.footer-info{
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+    text-align:center;
+    text-transform:capitalize;
 }
