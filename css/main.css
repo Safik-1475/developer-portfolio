@@ -37,12 +37,17 @@ img{
 .col{
     width:40%;
 }
+ h2{
+    font-size:34px;
+    font-weight:700;
+    color:#0c0c0c;
+}
     
 /*----------------------------------------------
                 header style 
 ------------------------------------------------*/
 .header-area{
-    min-height:100vh;
+    min-height:90vh;
     background-image:linear-gradient(to bottom, #DEEEF0, #FEE4CD);
 }
 .header-area .headline{
@@ -51,11 +56,7 @@ img{
     border-radius:2px;
     text-transform:capitalize;
 }
-.headline h2{
-    font-size:34px;
-    font-weight:700;
-    color:#0c0c0c;
-}
+
 .headline h1{
     font-size:42px;
     letter-spacing:1px;
@@ -70,7 +71,7 @@ img{
 }
 .header-area .btn{
     display:inline-block;
-    padding:12px 26px;
+    padding:12px 32px;
     background-image:linear-gradient(45deg,orange,tomato, gray);
     text-transform:capitalize;
     font-size:17px;
@@ -86,4 +87,49 @@ img{
     width:90%;
     height:90%;
     border-radius:50%;
+}
+/*my mission*/
+.mission{
+    padding:60px 0;
+}
+.mission h2{
+    text-align:center;
+    padding:30px 0px;
+    text-transform:capitalize;
+    font-size:34px;
+}
+
+.mission h2 span{
+    color:rgb(245, 223, 78);
+}
+.mission .img img{
+    width:30%;
+}
+.mission .col{
+    padding:12px 40px;
+    background-image:linear-gradient(to bottom, rgb(211, 238, 137),lightgray);
+    border-radius:10px;
+    justify-content:space-around;
+    width:31.31%;
+    margin-left:2%;
+
+}
+.mission .col:nth-child(1){
+    margin-left:0;
+}
+.mission .col:nth-child(2){
+    background-image:linear-gradient(to top, rgb(211, 238, 137),rgb(93, 144, 137))
+}
+.mission .col:nth-child(3){
+    background-image:linear-gradient(rgb(192, 204, 160),rgb(173, 173, 165))
+}
+
+.mission .col h3{
+    font-size:24px;
+    text-transform:capitalize;
+}
+.mission .col p{
+    font-size:15px;
+    line-height:24px;
+    color:darkslategray
 }
